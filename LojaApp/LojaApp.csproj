@@ -60,6 +60,9 @@
     <Compile Include="WndCadVeiculo.xaml.cs">
       <DependentUpon>WndCadVeiculo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WndConsVeiculo.xaml.cs">
+      <DependentUpon>WndConsVeiculo.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -82,6 +85,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WndCadVeiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WndConsVeiculo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

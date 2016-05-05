@@ -5,18 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LojaApp"
         mc:Ignorable="d"
-        Title="Cadastro de Veículos" Height="350" Width="582.993">
+        Title="Cadastro de Veículos" Height="350" Width="700
+        " Activated="Window_Activated">
     <Grid>
-        <GroupBox x:Name="groupBox" Header="Veículo" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Height="106" Width="555"/>
-        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="27,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="27,30,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDes" HorizontalAlignment="Left" Height="23" Margin="133,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="98,30,0,0" TextWrapping="Wrap" Text="Modelo" VerticalAlignment="Top"/>
-        <Button x:Name="btnSelect" Content="Select" HorizontalAlignment="Left" Margin="27,74,0,0" VerticalAlignment="Top" Width="75" Click="btnSelect_Click"/>
-        <Button x:Name="btnInsert" Content="Insert" HorizontalAlignment="Left" Margin="154,80,0,0" VerticalAlignment="Top" Width="75" Click="btnInsert_Click"/>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="243,80,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="305,80,0,0" VerticalAlignment="Top" Width="75" Click="btnDelete_Click"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="260,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="338,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <GroupBox x:Name="groupBox" Header="Veículo" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top" Height="106" Width="672"/>
+        <ComboBox x:Name="cbFab" HorizontalAlignment="Left" Margin="237,46,0,0" VerticalAlignment="Top" Width="131" Height="22"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="16,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="82"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="16,30,0,0" TextWrapping="Wrap" Text="Id" VerticalAlignment="Top" Height="16" Width="17"/>
+        <TextBox x:Name="txtModelo" HorizontalAlignment="Left" Height="23" Margin="55,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="105"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="55,30,0,0" TextWrapping="Wrap" Text="Modelo" VerticalAlignment="Top" Height="16" Width="55"/>
+        <Button x:Name="btnSelect" Content="Select" HorizontalAlignment="Left" Margin="16,74,0,0" VerticalAlignment="Top" Width="75" Click="btnSelect_Click" Height="22"/>
+        <Button x:Name="btnInsert" Content="Insert" HorizontalAlignment="Left" Margin="91,74,0,0" VerticalAlignment="Top" Width="75" Click="btnInsert_Click" Height="22"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="166,74,0,0" VerticalAlignment="Top" Width="75" Click="btnUpdate_Click" Height="22"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="240,74,0,0" VerticalAlignment="Top" Width="75" Click="btnDelete_Click" Height="22"/>
+        <TextBox x:Name="txtAno" HorizontalAlignment="Left" Height="23" Margin="160,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="160,31,0,0" TextWrapping="Wrap" Text="Ano" VerticalAlignment="Top" Height="16" Width="22"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="237,30,0,0" TextWrapping="Wrap" Text="Fabricante" VerticalAlignment="Top" Height="16" Width="55"/>
+        <DatePicker x:Name="dpDataCompra" HorizontalAlignment="Left" Margin="368,46,0,0" VerticalAlignment="Top" Height="24" Width="111"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="368,30,0,0" TextWrapping="Wrap" Text="Data Compra" VerticalAlignment="Top" Height="16" Width="89"/>
+        <TextBox x:Name="txtValorCompra" HorizontalAlignment="Left" Height="23" Margin="479,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="92"/>
+        <TextBox x:Name="txtPrecoVenda" HorizontalAlignment="Left" Height="23" Margin="571,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="99" RenderTransformOrigin="0.385,0.493"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top" Height="192" Width="672"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="479,30,0,0" TextWrapping="Wrap" Text="Valor Compra" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="571,30,0,0" TextWrapping="Wrap" Text="Preço Venda" VerticalAlignment="Top"/>
     </Grid>
 </Window>

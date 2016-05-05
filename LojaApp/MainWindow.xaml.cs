@@ -27,23 +27,22 @@ namespace LojaApp
 
         private void CadFabricantesClick(object sender, RoutedEventArgs e)
         {
-            WndCadFabricante w = new WndCadFabricante();
-            w.Show();
+            (new WndCadFabricante()).Show();
         }
 
         private void CadVeiculosClick(object sender, RoutedEventArgs e)
         {
-
+            (new WndCadVeiculo()).Show();
         }
 
         private void SairClick(object sender, RoutedEventArgs e)
         {
-
+            Close();
         }
 
         private void ConsVeiculosClick(object sender, RoutedEventArgs e)
         {
-
+            (new WndConsVeiculo()).Show();
         }
     }
 }
