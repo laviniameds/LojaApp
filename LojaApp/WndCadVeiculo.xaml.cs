@@ -71,12 +71,21 @@ namespace LojaApp
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-
+            Veiculo r = (from v in dc.Veiculos where v.Id == int.Parse(txtId.Text) select v).Single();
+            r.Modelo = txtModelo.Text;
+            r.Ano = int.Parse(txtAno.Text);
+            r.IdFabricante = (int)cbFab.SelectedValue;
+            r.DataCompra = dpDataCompra.SelectedDate;
+            r.ValorCompra = decimal.Parse(txtValorCompra.Text);
+            r.PrecoVenda = decimal.Parse(txtPrecoVenda.Text);
+            dc.SubmitChanges();
         }
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-
+            Veiculo r = (from v in dc.Veiculos where v.Id == int.Parse(txtId.Text) select v).Single();
+            dc.Veiculos.DeleteOnSubmit(r);
+            dc.SubmitChanges();
         }
     }
 }
